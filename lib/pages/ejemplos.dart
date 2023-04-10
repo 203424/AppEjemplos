@@ -1,5 +1,6 @@
 import 'package:ejemplo/pages/ejemplos_diapos/ejemplo1.dart';
 import 'package:ejemplo/pages/ejemplos_diapos/ejemplo2.dart';
+import 'package:ejemplo/pages/ejemplos_diapos/ejemplo3.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,7 @@ class HomePage extends StatelessWidget {
                         builder: (context) => const Ejemplo1(),
                       ));
                 },
-                child: Text("Ejemplo 1")),
+                child: const Text("Ejemplo 1")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -33,7 +34,18 @@ class HomePage extends StatelessWidget {
                         builder: (context) => const OnBoarding(),
                       ));
                 },
-                child: Text("Ejemplo 2"))
+                child: const Text("Ejemplo 2")),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnimationsWidget(),
+                  ),
+                );
+              },
+              child: const Text("Ejemplo 3"),
+            ),
           ],
         ),
       ),
