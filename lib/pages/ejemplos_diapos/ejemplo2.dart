@@ -88,7 +88,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     : Colors.white,
                 onPressed: () async {
                   currentPage == contents.length - 1
-                      ? Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage(),))
+                      ? Navigator.pop(context, MaterialPageRoute(builder: (context) => const HomePage(),))
                       : varController.nextPage(
                           duration: const Duration(milliseconds: 500),
                           curve: Curves.easeInOut);
