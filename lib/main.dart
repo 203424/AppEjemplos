@@ -1,23 +1,22 @@
-import 'package:ejemplo/pages/ejemplos.dart';
-import 'package:ejemplo/pages/ejemplos_diapos/ejemplo1.dart';
 import 'package:flutter/material.dart';
+// import 'package:fruit_recognition/pages/body_boarding.dart';
+import 'package:fruit_recognition/pages/splash_screen.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const SplashScreen(),
     );
   }
 }

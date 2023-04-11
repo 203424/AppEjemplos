@@ -1,4 +1,4 @@
-package com.example.ejemplo
+package com.example.fruit_recognition
 
 import io.flutter.embedding.android.FlutterActivity
 

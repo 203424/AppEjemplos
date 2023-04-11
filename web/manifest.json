@@ -1,6 +1,6 @@
 {
-    "name": "ejemplo",
-    "short_name": "ejemplo",
+    "name": "fruit_recognition",
+    "short_name": "fruit_recognition",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
